@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Ejercicio_1._3.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Label
+                Margin="0,0,0,10"
+                FontAttributes="Bold"
+                FontSize="Title"
+                HorizontalOptions="Center"
+                SemanticProperties.HeadingLevel="Level1"
+                Style="{StaticResource Headline}"
+                Text="Ejercicio 1.3 Grupo 1" />
+
+            <Button
+                x:Name="btnAgregar"
+                Margin="0,0,0,10"
+                Clicked="btnAgregar_Clicked"
+                HorizontalOptions="Fill"
+                SemanticProperties.Hint="Agregar una nueva persona"
+                Text="Agregar Persona" />
+
+            <Button
+                x:Name="btnVerPersonas"
+                Margin="0,0,0,10"
+                Clicked="btnVerPersonas_Clicked"
+                HorizontalOptions="Fill"
+                SemanticProperties.Hint="Ver Lista de Personas"
+                Text="Ver Personas" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Ejercicio_1._3.Views.verPersona"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Información">
+    <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+            <Label
+                Margin="15,0,10,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="Nombre Completo:" />
+            <Label
+                Margin="15,0,5,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="{Binding Nombres}" />
+
+            <Label
+                Margin="0,0,5,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="{Binding Apellidos}" />
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+            <Label
+                Margin="15,0,10,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="Edad: " />
+
+            <Label
+                Margin="15,0,5,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="{Binding Edad}" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+            <Label
+                Margin="15,0,10,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="Correo Electronico: " />
+
+            <Label
+                Margin="15,0,5,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="{Binding Correo}" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand">
+            <Label
+                Margin="15,0,10,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="Direccion: " />
+
+            <Label
+                Margin="15,0,5,10"
+                FontAttributes="Bold"
+                FontSize="Header"
+                Text="{Binding Direccion}" />
+        </HorizontalStackLayout>
+
+        <Button
+            x:Name="btnActualizar"
+            Margin="0,50,0,10"
+            Clicked="btnActualizar_Clicked"
+            HorizontalOptions="Center"
+            SemanticProperties.Hint="Actualizar persona"
+            Text="Actualizar Persona" />
+
+        <Button
+            x:Name="btnRegresar"
+            Margin="0,0,0,10"
+            Clicked="btnRegresar_Clicked"
+            HorizontalOptions="Center"
+            SemanticProperties.Hint="Regresar a Menu Principal"
+            Text="Regresar" />
+    </VerticalStackLayout>
+</ContentPage>
